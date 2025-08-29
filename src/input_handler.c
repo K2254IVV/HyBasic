@@ -1,6 +1,7 @@
 #include "hybasic.h"
 #include <X11/keysym.h>
 #include <stdio.h>
+#include <string.h>  // Добавлено для strcmp
 
 void input_handle_keypress(HyBasicServer *server, XKeyEvent *event) {
     KeySym keysym = XLookupKeysym(event, 0);
