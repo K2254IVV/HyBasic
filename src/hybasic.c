@@ -1,6 +1,8 @@
 #include "hybasic.h"
 #include <unistd.h>
 #include <stdio.h>
+#include <string.h>    // Добавлено для memset
+#include <time.h>      // Добавлено для nanosleep
 
 bool hybasic_init(HyBasicServer *server) {
     memset(server, 0, sizeof(HyBasicServer));
