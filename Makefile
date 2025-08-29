@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99 -I./include
+CFLAGS = -Wall -Wextra -std=c99 -I./include -D_POSIX_C_SOURCE=200112L
 LDFLAGS = -lX11 -lpthread
 
 SRC = src/main.c src/hybasic.c src/x11_backend.c src/text_mode.c \
