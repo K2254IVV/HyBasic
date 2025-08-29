@@ -5,6 +5,7 @@
 #include <X11/Xutil.h>
 #include <stdbool.h>
 #include <pthread.h>
+#include <string.h>  // Добавлено для memset и других строковых функций
 
 #define HYBASIC_VERSION "0.1.0"
 #define MAX_WINDOWS 256
